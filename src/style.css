@@ -1,3 +1,131 @@
+:root {
+    --background-colour: rgb(82, 150, 165);
+    --background-highlight-colour: rgb(130, 221, 240);
+    --board-colour: rgb(246, 194, 139);
+    --board-highlight-colour: rgb(252, 215, 173);
+    --board-contrast-colour: rgb(165, 117, 72);
+}
+
 body {
-    background: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    
+    margin: 0px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    height: 95vh;
+    width: 100vw;
+
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    background: var(--background-colour);
+}
+
+.board {
+    margin: 10vh 20vw;
+
+    flex: 1 0 auto;
+    display: flex;
+
+
+    background:var(--board-contrast-colourcolour);
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.sideBar {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    background: var(--board-colour);
+    border: solid var(--board-contrast-colour) 1px;
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.timeDiv {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: content;
+    gap: 25px;
+
+    background: var(--board-colour);
+    border-bottom: solid var(--board-contrast-colour) 1px;
+    border-top-left-radius: 10px;
+}
+
+.projectDiv {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+
+    background: var(--board-colour);
+    border-bottom: solid var(--board-contrast-colour) 1px;
+    border-bottom-left-radius: 10px;
+}
+
+.sideBarRow {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+button {
+    flex: 1 0 auto;
+    height: 24px;
+    width: 96px;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: var(--board-contrast-colour);
+    font-size: 20px;
+    transition: 0.1s;
+    text-overflow: clip ellipsis;
+}
+
+button:hover {
+    transform: scale(1.2);
+    color: black;
+}
+
+
+
+.taskList {
+    flex: 1 0 auto;
+
+    background: var(--board-colour);
+    border: solid var(--board-contrast-colour) 1px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#footer {
+    height: 5vh;
+    width: 100vw;
+    text-align: center;
+
+    background: var(--background-colour);
 }
