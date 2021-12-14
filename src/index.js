@@ -1,4 +1,4 @@
 import './style.css'
-import test from './task'
+import { initUI }  from './uiUpdater'
 
-test();
+initUI();
